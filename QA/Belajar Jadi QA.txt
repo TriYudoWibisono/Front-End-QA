@@ -1,5 +1,57 @@
 Belajar Jadi QA
 
+Roadmap 1 :
+
+--> Pemahaman dasar tentang QA
+
+1. Testing Approach (cara pengetesan)
+a. White Box Testing (unit test)
+b. Black Box Testing (smoke test, exploratory test)
+c. Grey Box Testing (integration test, e2e test)
+
+2. Testing Category
+a. functional test (smoke test, integration test, regression test)
+b. non-functional test (load test, performance test, accessibility test)
+
+3. Testing tools (TestRail, Zephyr)
+
+4. project management (JIRA, Trello)
+
+--> Pengetahuan tentang SDLC
+1. Agile Development 
+   Agile Development memiliki hal yang penting yaitu Cross Functional Team (Developer, QA, PM, Designer and Devops)
+
+--> Manual Testing Skill
+ ~ Manual Testing Methodology ~
+ a. Test Plan
+ b. Test Case & Test Scenario
+ c. Compatibility Test (Operating System, Mobile App, Browser (yang berbeda))
+ d. Test Reporting 
+
+
+--> Automation Testing Skill
+1. Web Application Test (Front End Test (selenium, webdriverIO, cypress, etc) & Back End Test (SQL dan  NoSQL) 
+
+2. MicroServices Test (API Test (SoapUI, Postman, Newman) & Contract Test) 
+
+3. Mobile Test (iOS, Android & Mobile Web App (Appium & Katalon)
+
+4. Load, Stress atau Performance Test (Load & Stress Test)
+
+--> Other Skills / skill yang cukup diperlukan dalam Automation Testing
+1. CI/CD
+2. sion Control and Repository, eg : Git, Github
+3. Bash/Terminal, PowerShell
+4. Test Reporting dan Monitoring
+(jenskin, CircleCI, Github Action, etc)
+
+--> Bonus Skill
+1. Cyber Security Test (Penetration Test, Vulnerability, dsb). daftar ini bisa di cek di OWASP website
+
+
+
+Roadmap 2 :
+
 1. harus memiliki fundamental atau basic knowledge QA
 a. Test Case : rangkaian ataupun tindakan yang kita lakukan dalam menguji ataupun memverifikasi fitur yang dibangun itu sudah sesuai dengan requirement yang di tentukan
 b. Defect : Bug/Error yang ditemukan saat melakukan pengujian atau output yang dikeluarkan system tidak sesuai dengan yang diharapkan
@@ -33,3 +85,37 @@ b. Katalon : pengujian automation
 Referensi Youtube Belajar QA :
 1. https://www.youtube.com/watch?v=IrWbKeLGi2A&list=PLteNxiEnsdrT1KQDW3tXGeuRubHT8szwv
 
+2. https://www.youtube.com/watch?v=v3Qxf1PG0fo&list=PLfw_nI4u_6WM8200HlderALoIYKpSa4W6
+
+
+
+Contoh Spesifikasi Kebutuhan kerja QA :
+
+1. Pemahaman yang kuat tentang siklus hidup pengembangan perangkat lunak (SDLC) dan proses QA.
+
+2. Kemampuan untuk mengkompilasi dan menjalankan kode.
+
+3. Pengetahuan pemrograman dasar atau keakraban dengan prinsip-prinsip UI/UX.
+
+4. Keterampilan analitis dan pemecahan masalah yang kuat.
+
+5. Kemampuan komunikasi dan kerja tim yang sangat baik.
+
+6. Experience in manual UI testing.
+
+7. Experience in Appium and Katalon.
+
+
+Tanggung jawab :
+
+Pengujian otomatisasi antarmuka pengguna pada web dan aplikasi seluler (Android dan iOS);
+
+Menganalisis persyaratan yang berasal dari spesifikasi;
+
+Jalankan kasus uji dan lakukan uji regresi dan kriteria keluar;
+
+Memastikan cakupan pengujian maksimum untuk memastikan tidak ada bug dengan tingkat kritis tinggi/sedang pada produk yang dirilis;
+
+Bertanggung jawab untuk membuat semua dokumentasi penguji;
+
+Pastikan semua item tes diarsipkan di git secara teratur dan JIRA selalu diperbarui;
