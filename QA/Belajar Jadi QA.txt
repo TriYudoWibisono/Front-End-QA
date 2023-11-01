@@ -1,0 +1,35 @@
+Belajar Jadi QA
+
+1. harus memiliki fundamental atau basic knowledge QA
+a. Test Case : rangkaian ataupun tindakan yang kita lakukan dalam menguji ataupun memverifikasi fitur yang dibangun itu sudah sesuai dengan requirement yang di tentukan
+b. Defect : Bug/Error yang ditemukan saat melakukan pengujian atau output yang dikeluarkan system tidak sesuai dengan yang diharapkan
+c. Testing Type : ada banyak yaitu manual testing, automation testing, regression testing, dll
+d. Software Development Life Cycle / SDLC : tahapan ataupun flow pengembangan analisa, desain, implementasi, pengujian dan maintenance.
+
+Kita juga harus ngerti type Defect. diantaranya :
+a. Fatal
+b. Major
+c. Minor
+d. Cosmetic
+
+2. Belajar cara membuat laporan pengujian dan belajar menggunakan tools dalam pengujian
+
+
+Tips buat Menjadi QA :
+a. Komunikasi Skill
+b. Technical Skill  
+c. menggunakan tools (misalnya Jira Software)
+
+Jira Software berfungsi untuk dokumentasi testing dan juga bisa untuk mengelola defect yang ditemukan saat pengujian. 
+
+macam-macam tools :
+a. Jira Software
+b. Katalon : pengujian automation
+
+
+3. Memiliki kemampuan dalam memahami requirement / persyaratan
+
+
+Referensi Youtube Belajar QA :
+1. https://www.youtube.com/watch?v=IrWbKeLGi2A&list=PLteNxiEnsdrT1KQDW3tXGeuRubHT8szwv
+
