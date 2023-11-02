@@ -1,11 +1,19 @@
-h1{
-    font-size: 100px;
-    color: rgb(115,80,212);
-    text-decoration: line-through;
+.hello:link {
+    color: orange;
+}
+.hello:hover {
+    font-family: arial;
+    font-size: 20px;
+    color: blueviolet;
+}
+.hello:active{
+    font-style: italic;
 }
 
-p{
-    text-indent: 100px;
-    text-transform: capitalize;
-    letter-spacing: 2px;
+.hello:visited{
+    color: black;
+}
+
+li:first-child a{
+    color: green;
 }
