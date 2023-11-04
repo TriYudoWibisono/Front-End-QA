@@ -1,19 +1,4 @@
-.hello:link {
-    color: orange;
-}
-.hello:hover {
+body{
     font-family: arial;
-    font-size: 20px;
-    color: blueviolet;
-}
-.hello:active{
-    font-style: italic;
-}
-
-.hello:visited{
-    color: black;
-}
-
-li:first-child a{
-    color: green;
+    color: darkgray;
 }
