@@ -1,0 +1,6 @@
+Sebelum belajar React :
+1. tahu bagaimana membangun aplikasi dengan javascript
+2. tahu bagaimana cara memanipulasi dom
+3. tahu teknik - teknik javascript ps6
+
+Dokumentasi React Berbahasa Indonesia : id.react.dev/learn
