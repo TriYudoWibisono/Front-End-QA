@@ -1,0 +1,67 @@
+Yang perlu di pelajari untuk menjadi Front End :
+1. HTML + CSS + JavaScript
+2. bikin portfolio (bikin website pribadi, company profil, DLL)
+~ teknologi yang mesti dipelajari :
+3. Version Control System (git, gitlab atau github)
+4. CSS Pre-processor (Sass, {less}, stylus)
+5. CSS Framework  / Library (Bootstrap, Tailwind, Material UI)
+6. Web Components (membuat custom elements, Shadow DOM, HTML Template)
+7. Node JS
+8.
+
+
+
+HTML 
+
+a. basic : belajar tag, fungsi tag, atributte tag
+b. Semantic Elements : tag HTML apa saja yang bisa digunakan (khususnya HTML 5) yang bisa digunakan agar struktur dari website kita memiliki makna. tag apa yang kita gunakan agar tepat.
+c. Form Validation : jangan dulu mengandalkan bahasa pemrograman, pada pada HTML memiliki kemampuan untuk memvalidasi form. misal type email untuk input email. agar orang tidak bisa masukkan data ke form input email, dengan format yang bukan email. required, autocomplete, dll
+d. SVG & Canvas
+e. Information Architecture : menentukan informasi mana yang penting yang akan di tampilkan ke dalam website kita. ada hirarki informasinya.
+f. Accessibility : bagaimana website kita bisa di akses dengan baik, oleh temen2 kita yang memiliki keterbatasan.
+G. SEO : agar website yang kita buat bisa terindex dengan baik di mesin pencari misalnya google.
+
+
+CSS
+
+a. Basic : anatomi CSS/dasar CSS adalah mempelajari apa itu selector, bagaimana menyeleksi elemen pada HTML menggunakan CSS, Property CSS ada apa saja, dan nilai yang bisa kita beri disetiap propertynya apa. selector --> property --> value.
+b. CSS Layouting : menghias elemen2 didalam HTML agar posisinya sesuai dengan keinginan kita. unit --> box model --> positioning --> flex box --> grid --> dll
+c. filter, Transition & Animation : agar website lebih interactive
+d. Responsive Design : agar bisa digunakan di beragam device. fluit layout --> media query --> satuan2 yang biasa digunakan untuk responsive (em, rem, vw, vh, vmin, vmax, dll)
+e. Modern CSS : mempelajari fitur2 CSS yang saat ini semakin keren. misal di CSS skrng ada variabel. kita juga bisa memberikan efek2 menarik baik itu 2 dimensi ataupun 3 dimensi kepada elemen kita. juga bisa melakukan operasi matematika. dll
+f. CSS Architecture : bagaimana mengelola kode CSS agar mudah untuk digunakan / agar efisien (Objek Oriented  CSS, .BEM (Block Elemen Modifier))
+
+
+JavaScript
+
+a. Basic Concepts --> konsep2 dasar JavaScript, Syntaks JS, konsep-konsep dasar programming JS (bgmn variabel bekerja, variabel seperti apa, pengulangan, pengkondisian, array, function, objek, DLL) .
+b. DOM (Dokumen Object Model) : Bagaimana kita bisa berinteraksi dengan elemen2 HTML yang kita buat sebelumnya). 
+- Pada DOM wajib mempelajari DOM tree/ pohom DOM. lalu pelajari Dom travesal (menelusuri noted elemen pada web kita menggunakan DOM.
+c. ES6 + Modular JavaScript.
+d. Asynchronous JavaScript
+e. Fetch API :Bagaimana caranya kita ngambil data dari tempat lain, itu menggunakan API milik JS yang namanya fetch API
+
+
+CSS Pre-processor (Sass, {less}, stylus)
+
+merupakah sebuah teknologi yang membuat CSS kita lebih sakti lagi. Sandhika  galih lebih prefer *Sass*. Pada CSS Pre-processor ini kita bisa melakukan fitur fitur yang tidak bisa dilakukan di CSS misalnya saja sebuah function, melakukan pengulangan, melakukan pengkondisian didalam CSS kita.
+
+
+CSS Framework  / Library
+
+Ada macam-macam Framework / Library CSS. jika kita bisa menguasai salah satunya saja, maka kita akan lebih mudah memahami yang lainnya jika ingin belajar  Framework / Library yang lain. dan banyak di Framework CSS ini, dimana didalamnya terdapat CSS - Prosessor. jadi jika kita sudah memiliki pemahaman mengenai CSS - Prosessor tadi, maka akan semakin mempermudah kita jika ingin memodifikasi isi dari Frameworknya
+
+
+Web Components (membuat custom elements, Shadow DOM, HTML Template)
+
+mempelajari materi diatas berguna untuk nanti kita akan belajar Front End Framework.
+
+
+
+Node JS 
+
+kita perlu belajar Node JS untuk supaya kita bisa menjalankan JavaScript diluar browser. dan juga nanti kita butuh sebuah package manajer bawaan Node JS yang namanya NVM. karena kedepannya kita bakalan sering menggunakan NVM ini untuk mengambil / 
+
+
+
+
