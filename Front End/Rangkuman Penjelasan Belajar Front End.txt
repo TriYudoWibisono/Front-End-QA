@@ -7,7 +7,12 @@ Yang perlu di pelajari untuk menjadi Front End :
 5. CSS Framework  / Library (Bootstrap, Tailwind, Material UI)
 6. Web Components (membuat custom elements, Shadow DOM, HTML Template)
 7. Node JS
-8.
+8. Build Tools & Task Runner (grunt, gulp, webpack, vite)
+9. Frontend Framework / Library (react, vue, angular, dll)
+10. state management
+11. API (Application Programming Interface)
+12.
+13.
 
 
 
@@ -60,7 +65,20 @@ mempelajari materi diatas berguna untuk nanti kita akan belajar Front End Framew
 
 Node JS 
 
-kita perlu belajar Node JS untuk supaya kita bisa menjalankan JavaScript diluar browser. dan juga nanti kita butuh sebuah package manajer bawaan Node JS yang namanya NVM. karena kedepannya kita bakalan sering menggunakan NVM ini untuk mengambil / 
+kita perlu belajar Node JS untuk supaya kita bisa menjalankan JavaScript diluar browser. dan juga nanti kita butuh sebuah package manajer bawaan Node JS yang namanya NVM. karena kedepannya kita bakalan sering menggunakan NVM ini untuk mengambil / Menyimpan modul2 dari aplikasi kita
+
+
+
+Build Tools & Task Runner
+
+digunakan untuk mempermudah kita melakukan serangkaian pekerjaan yang berulang-ulang. atau ketika nanti kita membutuhkan banyak library atau banyak script didalam aplikasi kita. misalnya kita memanggil 10 script didalam aplikasi kita, kita bisa gunakan build tools, yang sebelumnya manggil 10 script, bisa jadi manggil dengan 1 script saja.
+
+
+
+state management
+
+adalah sebuah tools atau teknologi untuk mengelola state ketika kita menggunakan Framework FE. misal kita menggunakan react, kita bisa menggunakan state management redux, ketika menggunakan vue kita gunakan state management vuex dan jika menggunakan angular, kita gunakan state management Rxjs
+
 
 
 
