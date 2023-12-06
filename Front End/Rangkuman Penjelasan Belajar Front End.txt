@@ -11,8 +11,13 @@ Yang perlu di pelajari untuk menjadi Front End :
 9. Frontend Framework / Library (react, vue, angular, dll)
 10. state management
 11. API (Application Programming Interface)
-12.
-13.
+12. Website Deployment (meng-upload website ke webserver (github pages, vercel, netlify) agar bisa dilihat orang lain)
+13. Testing Tools (Jest, Mocha, Jasmine, Selenium)
+
+Masih ingin lebih  pro ? bisa pelajari berikut :
+14. Static Site Generators (Next (react), NUXTJS (vue), Gatsby(react))
+15. Progressive Web Apps (PWA) --> Web Storage, Web Socket, Service Worker
+16. Web Assembly
 
 
 
@@ -80,6 +85,22 @@ state management
 adalah sebuah tools atau teknologi untuk mengelola state ketika kita menggunakan Framework FE. misal kita menggunakan react, kita bisa menggunakan state management redux, ketika menggunakan vue kita gunakan state management vuex dan jika menggunakan angular, kita gunakan state management Rxjs
 
 
+API (Application Programming Interface)
 
+sebuah teknologi agar kita (Front End) bisa ngobrol dengan bagian BackEnd. atau lebih spesifik lagi kita harus paham tentang rest API ({REST:API}).  Dimana nanti kita menggunakan notasi / bentuk data yang dinamakan {JSON} atau yang lebih advanced lagi yaitu GraphQl.
+
+
+Website Deployment
+
+bagaimana caranya website yang sudah kita buat bisa dilihat oleh orang lain. jadi dideploy ke sebuah web server. paling sederhana menggunakan github pages. atau juga bisa menggunakan vercel atau netlify.
+
+
+Testing Tools
+
+bagaimana mengetest aplikasi kita.
+
+
+
+ 
 
 
