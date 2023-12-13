@@ -12,7 +12,7 @@ body{
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-  background: var(--bg-color);
+  background: lightblue url("img/love.jpg") no-repeat fixed;
   display: flex;
   align-items: center;
   justify-content: center;
