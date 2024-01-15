@@ -27,13 +27,13 @@ print(html)
 # cara mengatasinya, di python ada yang namanya keyword argument
 
 def create_html2(tag, text, **attributes):
-    html2 = f"<{tag}"
+    html = f"<{tag}"
 
     for key, value in attributes.items():
-        html2 = html2 + f" {key}='{value}'"
+        html = html + f" {key}='{value}'"
 
-    html2 = html2 + f">{text}</{tag}>"
-    return html2
+    html = html + f">{text}</{tag}>"
+    return html
 
 html2 = create_html2("p", "Hello Python", style="paragraf")
 print(html2)
