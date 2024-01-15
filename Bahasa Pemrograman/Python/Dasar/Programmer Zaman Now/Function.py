@@ -1,4 +1,5 @@
-def tambah():
+def tambah(nama, email, telepon):
+    
 
 def hapus():
 
