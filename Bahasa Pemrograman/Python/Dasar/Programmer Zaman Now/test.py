@@ -1,12 +1,11 @@
-def create_html(tag, text, **attributes):
-    html = f"<{tag}"
+#Contoh cara menghapus pada Dictionary Python
 
-    for key, value in attributes.items():
-        html = html + f" {key}='{value}'"
-    
-    html = html + f">{text}</{tag}>"
-    return html
+dict = {'Name': 'Zara', 'Age': 7, 'Class': 'First'}
+KEY = 'Zara'
+CHECKKEY = KEY in dict.values()
 
-html2 = create_html("p", "Hello Python", style="paragraf")
-print(html2)
+print(f"apakah {KEY} ada di dict : {CHECKKEY}")
+
+
+
 

@@ -19,28 +19,13 @@ def tambah():
     } 
     return kontak
 
-def hapus(daftar_contak):
-    nama = input("Masukkan Nama Yang Akan Di Hapus : ")
-    # kita cari nama yang akan di hapus itu berada di index keberapa. caranya seperti berikut :
+def hapus(daftar_contak, hapus_nama):
+    hapus_nama = input("Masukkan nama yang akan dihapus : ")
 
-    # ketika kita mencari nama di dalam list, bisa saja tidak ketemu. oleh karena itu kita harus 
-    # membuat kondisi data yang dicari tidak ketemu terlebih dahulu. caranya kita buat variabel dengan 
-    # nilai negatif 1. di inde itu tidak ada nilai -1.  
-
-    index = -1
-
-    # melakukan pencarian nama dengan perulangan for. ketika tidak menggunakan for terhadap list, 
-    # melainkan for terhadap range
-
-    for i in range(0, len(daftar_contak)):
-        nama = daftar_contak[i]
-        if nama == nama["nama"]:
-            index = 1
-            break
-
-    if index == -1:
-        print("Data Nama Tidak Di Temukan !")
+    if hapus_nama in daftar_contak:
+        daftar_contak.remove(hapus_nama)
+        print(f'Data dengan kunci "{hapus_nama}" berhasil dihapus.')
     else:
-        print("Berhasil hapus Kontak !")
+        print(f'Error: Kunci "{hapus_nama}" tidak ditemukan dalam dictionary.')
 
 
