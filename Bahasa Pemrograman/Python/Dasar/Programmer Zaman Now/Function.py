@@ -28,4 +28,10 @@ def hapus(daftar_contak, hapus_nama):
     else:
         print(f'Error: Kunci "{hapus_nama}" tidak ditemukan dalam dictionary.')
 
+    
+    # Membuat list baru tanpa elemen dengan key tertentu
+new_list_of_dicts = [{k: v for k, v in d.items() if k != key_to_remove} for d in list_of_dicts]
+
+print(new_list_of_dicts)
+
 
