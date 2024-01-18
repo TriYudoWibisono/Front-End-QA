@@ -43,6 +43,10 @@ while True:
         daftar_contak.append(tambah)
     elif menu == "3":
         Function.hapus(daftar_contak)
+    elif menu == "4":
+        Function.cari_kontak(daftar_contak)
+    else:
+        print("Menu tidak tersedia !")
 
 print(" ")
 print("Program selesai berjalan, Sampai Jumpa")

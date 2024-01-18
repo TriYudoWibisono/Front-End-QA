@@ -1,18 +1,13 @@
-# Sample list of dictionaries
-my_list = [
-    {'name': 'Alice', 'age': 25, 'city': 'New York'},
-    {'name': 'Bob', 'age': 30, 'city': 'San Francisco'},
-    {'name': 'Charlie', 'age': 22, 'city': 'Los Angeles'}
-]
+def cari_kontak(daftar_contak):
+    nama_yg_dicari = input ("Nama Yang Dicari : ")
 
-# Value to be removed
-value_to_remove = 30
-
-# Iterate through the list and remove the dictionary with the specified value
-for item in my_list:
-    if 'age' in item and item['age'] == value_to_remove:
-        my_list.remove(item)
-        break  # Optional: If you only want to remove the first occurrence, you can break out of the loop
-
-# Display the modified list
-print(my_list)
+    for kontak in daftar_contak:
+        nama = kontak["nama"]
+        if nama.lower().find(nama_yg_dicari.lower()) != -1:
+            print(" ")
+            print("Daftar Kontar yang ada : ")
+            print("==========================")
+            print(f"Nama         : {kontak['nama']}")
+            print(f"Email        : {kontak['email']}")
+            print(f"No Telp      : {kontak['telepon']}")
+            print(" ")
