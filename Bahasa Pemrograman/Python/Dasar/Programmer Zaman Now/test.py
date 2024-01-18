@@ -1,14 +1,18 @@
-# List dari dictionary
-list_of_dicts = [
-    {"nama": "John", "umur": 25},
-    {"nama": "Jane", "umur": 30},
-    {"nama": "Doe", "umur": 22}
+# Sample list of dictionaries
+my_list = [
+    {'name': 'Alice', 'age': 25, 'city': 'New York'},
+    {'name': 'Bob', 'age': 30, 'city': 'San Francisco'},
+    {'name': 'Charlie', 'age': 22, 'city': 'Los Angeles'}
 ]
 
-# Key yang ingin dihapus
-key_to_remove = "umur"
+# Value to be removed
+value_to_remove = 30
 
-# Membuat list baru tanpa elemen dengan key tertentu
-new_list_of_dicts = [{k: v for k, v in d.items() if k != key_to_remove} for d in list_of_dicts]
+# Iterate through the list and remove the dictionary with the specified value
+for item in my_list:
+    if 'age' in item and item['age'] == value_to_remove:
+        my_list.remove(item)
+        break  # Optional: If you only want to remove the first occurrence, you can break out of the loop
 
-print(new_list_of_dicts)
+# Display the modified list
+print(my_list)

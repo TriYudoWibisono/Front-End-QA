@@ -19,19 +19,16 @@ def tambah():
     } 
     return kontak
 
-def hapus(daftar_contak, hapus_nama):
+def hapus(daftar_contak):
     hapus_nama = input("Masukkan nama yang akan dihapus : ")
 
-    if hapus_nama in daftar_contak:
-        daftar_contak.remove(hapus_nama)
-        print(f'Data dengan kunci "{hapus_nama}" berhasil dihapus.')
-    else:
-        print(f'Error: Kunci "{hapus_nama}" tidak ditemukan dalam dictionary.')
 
-    
-    # Membuat list baru tanpa elemen dengan key tertentu
-new_list_of_dicts = [{k: v for k, v in d.items() if k != key_to_remove} for d in list_of_dicts]
+    for item in daftar_contak:
+        if 'name' in item and item['name'] == hapus_nama:
+            daftar_contak.remove(item)
+            break  # Optional: If you only want to remove the first occurrence, you can break out of the loop
 
-print(new_list_of_dicts)
+# Display the modified list
+#print(my_list)
 
 
