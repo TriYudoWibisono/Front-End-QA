@@ -1,7 +1,7 @@
 # Latihan Perulangan
 
 # Membuat Segitiga
-sisi = 4
+sisi = 8
 
 # 1. Menggunakan For
 
@@ -29,14 +29,47 @@ print("Akhir dari While \n")
 
 # 3. Hanya Ganjil saja
 
-print("\n menampilkan bilangan ganjil")
+print("\n menampilkan bilangan ganjil \n")
 count = 1
 while True:
-    if count % 2 == 1:
-        print("Ganjil")
+    if (count%2):  
+        # print jika ganjil
+        print("*"*count)
+        count += 1
+    else:
+        # akan kembali keatas jika genap
+        print("Bilangan genap")
+        count += 1
+        continue
+    
+    # akan break jika count melebihi sis
 
-    print("*"*count)
-    count += 1
-
-    if count > sisi :
+    if count > sisi:
         break
+    
+
+# Membuat segitigas sama kaki
+
+print("\n segitiga sama kaki \n")
+count = 1
+spasi = int(sisi/2) 
+while True:
+    if (count%2):  
+        print(spasi)
+        print(" "*spasi, "+"*count)
+        spasi -= 1
+        count += 1
+    else:
+        count += 1
+        continue
+    
+    # akan break jika count melebihi sis
+
+    if count > sisi:
+        break
+    
+    
+# membuat belah ketupat
+print("\n membuat Belah Ketupat \n")
+
+perulangan 
