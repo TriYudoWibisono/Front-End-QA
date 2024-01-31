@@ -1,0 +1,46 @@
+pada display css layouting ini, tag yang perlu kita tahu adalah tag <div> dan <span>. apa hubungannya ?
+
+kedua tag tersebut memiliki property display. sbnernya semua elemen html memiliki property default display. kita ambil contoh saja 2 tag diatas.
+
+div displaynya adalah block = display : block (kebawah atau baris selanjutnya)
+
+sedangkan span displaynya adalah inline = display : inline (satu baris)
+
+catatan : jika kita tidak mengubah display default dari elemen html, maka elemen html akan tampil sesuai display defaultnya
+
+display ada 4 macam :
+a. inline
+   - elemen html yang secara default tidak menambahkan baris baru ketika dibuat
+   - lebar dan tinggi elemennya sebesar konten yang ada di dalamnya
+   - kita tidak dapat mengatur tinggi dan lebar dari elemen inline
+   - margin dan padding hanya mempengaruhi elemen secara horizontal, tidak vertikal
+elemen inline : b, strong, i, em, a, span, sub, sup, button, input, label, select, textarea, ...
+
+b. inline-block
+   - tidak ada elemen yang secara default memiliki properti inline-block
+   - kita harus ubah secara manual properti tersebut
+   - perilaku dasarnya sama dengan elemen inline (membuat beberapa inline akan ditempatkan di baris yang sama)
+   - perbedaannya, elemen inline-block dapat kita atur tinggi dan lebarnya
+
+c. blockd
+   - elemen html yang secara default menambahkan baris baru ketika dibuat
+   - jika tidak diatur lebarnya, maka lebar default dari elemen block akan memenuhi lebar dari browser / parent-nya
+   - kita dapat mengatur tinggi dan lebar dari elemen block
+   - di dalam elemen block, kita dapat menyimpan tag dengan elemen inline, inline-block, atau bahkan elemen block lain.
+elemen block : h1-h6, p, ol, ul, li, form, hr, div, ...
+
+d. none
+
+Praktek :
+tag <li> memiliki default display adalah block. jika mau di ubah ke inline caranya :
+
+.navigasi li{
+    display : inline;
+}
+
+<div class="navigasi>
+    <li><a href="#">link a</a></li>
+    <li><a href="#">link b</a></li>
+    <li><a href="#">link c</a></li>
+    <li><a href="#">link d</a></li>
+</div>
