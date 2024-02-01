@@ -1,0 +1,80 @@
+/* Cara Pakai */
+
+.satu{
+    width: 200px;
+    height: 200px;
+    background-color: lightgreen;
+    /* menambahkan margin di kotak satu untuk menambahkan jarak disebelah kiri, atas, bawah dan kanan*/
+    margin-left: 100px;
+    margin-top: 10px;
+    margin-bottom: 100px;
+    margin-right: 50px;
+}
+
+.dua{
+    width: 100px;
+    height: 010px;
+    background-color: lightblue;
+    margin-top: 50px;
+}
+
+.satu{
+    width: 50px;
+    height: 50px;
+    background-color: violet;
+}
+
+
+/* overlapping margin */
+
+/* kasus vertical */
+
+/* 
+kita fokus pada div.satu dan div.dua, dimana div.satu memiliki margin-bottom = 100 dan div.dua memiliki nilai margin-top = 50. seharus jarak antara kedua div tersebut adalah 150 px (hasil penjumlah margin-bottom (div.satu) dan margin-top (div.dua))
+
+namun pada faktanya jarak kedua div tersebut setelah di running tetap 100 px. mengapa demikian ? karena nilai margin tidak bertemu dan program akan mengambil nilai yang terbesar yaitu 100 px. 
+*/
+
+
+/* kasus horizontal */
+
+/* 
+
+ubah elemen div menjadi display inline-block agar menjadi sebaris horizontal dan ukuran bisa diubah
+
+lalu kita fokus pada div.satu dan div.dua, dimana div.satu memiliki margin-right = 30 px dan div.dua memiliki nilai margin-left = 20 px. namun pada posisi horizontal ini jarak antara kedua div tersebut adalah 50 px (hasil penjumlah margin-left (div.satu) dan margin-right (div.dua))
+
+*/
+
+
+
+/* negatif margin */
+
+/* 
+margin: -100 px 
+*/
+
+
+/* Auto */
+
+/* 
+
+nilai yang bisa dikasih kepada margin khusus untuk margin kiri dan kanan.
+
+margin-left:auto;
+margin-right:auto;
+
+harus setting keduanya tidak bisa salah satu. 
+
+hasil akan membuat elemen berada di tengah2 parentnya. pada kasus ini parentnya adalah body/posisi ditengah browser 
+
+*/
+
+
+/* Shorthand */
+
+/* 
+cara menyingkat penulisan margin :
+margin: 30px 30px 40px 40px;
+margin: 30px auto 40px; 
+*/
