@@ -1,0 +1,37 @@
+<!-- 
+ 
+clear berfungsi menghentikan / membersihkan float
+
+nilai dalam clear ada 3 :
+1. left
+2. right 
+3. both
+
+cara menghentikan / membersihkan float : 
+1. menggunakan property overflow
+2. menggunakan <div> kosong
+3. menggunakan teknik micro clearfix  
+
+namun ternyata, menggunakan overflow dan div kosong adalah cara yang tidak efektif. cara yang lebih efektif adalah dengan micro clearfix (kunjungi situs nicolasgalagher.com/micro-clear-hack). copy script ke css
+
+-->
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Clear</title>
+    <link rel="stylesheet" href="style_clear.css">
+</head>
+<body>
+    <!-- jika menggunakan micro clearfix, class container ditambakan cf -> class="container cf" -->
+    <div class="container">
+        <img src="logo.png" alt="logo">
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+
+        <!-- membuat div clear untuk menghentikan float -->
+        <div class="clear"></div>
+    </div>
+</body>
+</html>

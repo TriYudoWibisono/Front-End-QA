@@ -1,0 +1,23 @@
+body, h1, p{
+    margin: 0;
+    padding: 0;
+}
+
+div{
+    width: 200px;
+    height: 200px;
+    background-color: black;
+}
+
+/* 
+
+catatan Reset :
+
+banyak elemen html yang memiliki nilai  margin dan padding secara default. itulah kenapa tanpa kita atur jarak antar elemen/objek, akan ada jarak antara elemen tersebut. kita perlu reset agar elemen tidak memiliki jarak sama sekali dan kita punya kendali penuh untuk mengatur jaraknya. 
+
+
+namun banyak yang mengatakan bahwa menggunakan cara diatas adalah cara yang kurang tepat. karena harus mengecek semua program dan berat. 
+
+cara lebih efektir adalah dengan copy script dari situs css reset 'mayerweb.com'
+
+*/
