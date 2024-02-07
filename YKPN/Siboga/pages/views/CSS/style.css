@@ -1,0 +1,37 @@
+/* Navbar */
+
+/* table konten */
+table {
+    border-collapse: collapse;
+    width: 100%;
+}
+.rowspan-table .rowspan-cell{
+    text-align: center; 
+    vertical-align: middle;
+    font-weight: bold;
+    background-color: #F0F8FF;
+}
+/* table konten */
+
+/* Navbar */
+/* .main-header .navbar .navbar-expand{
+    position: fixed;
+} */
+/* Navbar */
+
+
+/* Navbar Login */
+.login-box, .card .card-outline .card-primary .card-header #header-login{
+    background-color: #FF00FF;
+}
+/* Navbar Login */
+
+
+/* Sidebar Mahasiswa */
+
+
+
+/* Sidebar Mahasiswa */
+
+
+

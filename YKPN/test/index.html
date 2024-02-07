@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>AdminLTE 3 | Gallery</title>
+
+  <!-- Google Font: Source Sans Pro -->
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,400i,700&display=fallback">
+  <!-- Font Awesome -->
+  <link rel="stylesheet" href="../Siboga/plugins/fontawesome-free/css/all.min.css">
+  <!-- Ekko Lightbox -->
+  <link rel="stylesheet" href="../Siboga/plugins/ekko-lightbox/ekko-lightbox.css">
+  <!-- Theme style -->
+  <link rel="stylesheet" href="../Siboga/dist/css/adminlte.min.css">
+</head>
+<body class="hold-transition sidebar-mini">
+<div class="wrapper">
+
+  <!-- Content Wrapper. Contains page content -->
+  <div class="content-wrapper">
+    <!-- Content Header (Page header) -->
+    <section class="content-header">
+      <div class="container-fluid">
+        <div class="row mb-2">
+          <div class="col-sm-6">
+            <h1>Gallery</h1>
+          </div>
+          <div class="col-sm-6">
+            <ol class="breadcrumb float-sm-right">
+              <li class="breadcrumb-item"><a href="#">Home</a></li>
+              <li class="breadcrumb-item active">Gallery</li>
+            </ol>
+          </div>
+        </div>
+      </div><!-- /.container-fluid -->
+    </section>
+
+    <!-- Main content -->
+    <section class="content">
+      <div class="container-fluid">
+        <div class="row">
+          <div class="col-12">
+            <div class="card card-primary">
+              <div class="card-header">
+                <h4 class="card-title">FilterizR Gallery with Ekko Lightbox</h4>
+              </div>
+              <div class="card-body">
+                <div>
+                  <div class="btn-group w-100 mb-2">
+                    <a class="btn btn-info active" data-filter="all"> All items </a>
+                    <a class="btn btn-info" data-filter="1"> Category 1 (WHITE) </a>
+                    <a class="btn btn-info" data-filter="2"> Category 2 (BLACK) </a>
+                    <a class="btn btn-info" data-filter="3"> Category 3 (COLORED) </a>
+                    <a class="btn btn-info" data-filter="4"> Category 4 (COLORED, BLACK) </a>
+                  </div>
+                </div>
+                <div>
+                  <div class="filter-container p-0 row">
+                    <div class="filtr-item col-sm-2" data-category="1" data-sort="white sample">
+                     <p>1111</p>
+                    </div>
+                    <div class="filtr-item col-sm-2" data-category="2" data-sort="black sample">
+                      <p>2222</p>
+                    </div>
+                    <div class="filtr-item col-sm-2" data-category="3" data-sort="red sample">
+                      <p>3333</p>
+                    </div>
+                    <div class="filtr-item col-sm-2" data-category="4" data-sort="red sample">
+                      <p>4444</p>
+                    </div>
+                    <div class="filtr-item col-sm-2" data-category="1, 2" data-sort="black sample">
+                      11112222
+                    </div>
+                    <div class="filtr-item col-sm-2" data-category="3, 4" data-sort="white sample">
+                      33334444
+                    </div>
+                  </div>
+                </div>
+
+              </div>
+            </div>
+          </div>
+        </div>
+      </div><!-- /.container-fluid -->
+    </section>
+    <!-- /.content -->
+  </div>
+  <!-- /.content-wrapper -->
+
+  <footer class="main-footer">
+    <div class="float-right d-none d-sm-block">
+      <b>Version</b> 3.2.0
+    </div>
+    <strong>Copyright &copy; 2014-2021 <a href="https://adminlte.io">AdminLTE.io</a>.</strong> All rights reserved.
+  </footer>
+
+  <!-- Control Sidebar -->
+  <aside class="control-sidebar control-sidebar-dark">
+    <!-- Control sidebar content goes here -->
+  </aside>
+  <!-- /.control-sidebar -->
+</div>
+<!-- ./wrapper -->
+
+<!-- jQuery -->
+<script src="../Siboga/plugins/jquery/jquery.min.js"></script>
+<!-- Bootstrap -->
+<script src="../Siboga/plugins/bootstrap/js/bootstrap.bundle.min.js"></script>
+<!-- Ekko Lightbox -->
+<script src="../Siboga/plugins/ekko-lightbox/ekko-lightbox.min.js"></script>
+<!-- AdminLTE App -->
+<script src="../Siboga/dist/js/adminlte.min.js"></script>
+<!-- Filterizr-->
+<script src="../Siboga/plugins/filterizr/jquery.filterizr.min.js"></script>
+<!-- AdminLTE for demo purposes -->
+<script src="../Siboga/dist/js/demo.js"></script>
+<!-- Page specific script -->
+<script>
+  $(function () {
+    $(document).on('click', '[data-toggle="lightbox"]', function(event) {
+      event.preventDefault();
+      $(this).ekkoLightbox({
+        alwaysShowClose: true
+      });
+    });
+
+    $('.filter-container').filterizr({gutterPixels: 3});
+    $('.btn[data-filter]').on('click', function() {
+      $('.btn[data-filter]').removeClass('active');
+      $(this).addClass('active');
+    });
+  })
+</script>
+</body>
+</html>

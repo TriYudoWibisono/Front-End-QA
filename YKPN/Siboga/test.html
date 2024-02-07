@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Nested Dropdown Based on Value</title>
+  <style>
+    .dropdown {
+      display: inline-block;
+      margin-right: 10px;
+    }
+
+    .dropdown select {
+      padding: 8px;
+    }
+  </style>
+</head>
+<body>
+
+<div class="dropdown" id="dropdown1">
+  <label for="mainDropdown">Main Dropdown:</label>
+  <select id="mainDropdown" onchange="updateSubDropdown()">
+    <option value="option1">Option 1</option>
+    <option value="option2">Option 2</option>
+    <option value="option3">Option 3</option>
+  </select>
+</div>
+
+<div class="dropdown" id="dropdown2" style="display: none;">
+  <label for="subDropdown">Sub Dropdown:</label>
+  <select id="subDropdown">
+    <!-- Sub Dropdown options will be dynamically populated based on the selection in the main dropdown -->
+  </select>
+</div>
+
+<script>
+  function updateSubDropdown() {
+    // Get the selected value from the main dropdown
+    var mainDropdown = document.getElementById('mainDropdown');
+    var selectedValue = mainDropdown.value;
+
+    // Get the sub dropdown and clear existing options
+    var subDropdown = document.getElementById('subDropdown');
+    subDropdown.innerHTML = '';
+
+    // Populate sub dropdown options based on the selected value
+    if (selectedValue === 'option1') {
+      addOption(subDropdown, 'subOption1-1', 'Sub Option 1.1');
+      addOption(subDropdown, 'subOption1-2', 'Sub Option 1.2');
+    } else if (selectedValue === 'option2') {
+      addOption(subDropdown, 'subOption2-1', 'Sub Option 2.1');
+      addOption(subDropdown, 'subOption2-2', 'Sub Option 2.2');
+    } else if (selectedValue === 'option3') {
+      addOption(subDropdown, 'subOption3-1', 'Sub Option 3.1');
+      addOption(subDropdown, 'subOption3-2', 'Sub Option 3.2');
+    }
+
+    // Show or hide the sub dropdown based on the selected value
+    var dropdown2 = document.getElementById('dropdown2');
+    dropdown2.style.display = selectedValue !== 'default' ? 'inline-block' : 'none';
+  }
+
+  function addOption(selectElement, value, text) {
+    var option = document.createElement('option');
+    option.value = value;
+    option.text = text;
+    selectElement.add(option);
+  }
+</script>
+
+</body>
+</html>

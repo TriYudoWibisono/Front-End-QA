@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Data Filter dengan Multiple Values</title>
+  <style>
+    .item {
+      display: none;
+    }
+
+    .active {
+      display: block;
+    }
+  </style>
+</head>
+<body>
+  <label for="categoryFilter">Filter by Category:</label>
+  <select id="categoryFilter" onchange="filterItems()">
+    <option value="all">All</option>
+    <option value="category1">Category 1</option>
+    <option value="category2">Category 2</option>
+    <option value="category3">Category 3</option>
+  </select>
+
+  <div class="item" data-category="category1 category2">Item 1 (Category 1, Category 2)</div>
+  <div class="item" data-category="category2 category3">Item 2 (Category 2, Category 3)</div>
+  <div class="item" data-category="category1">Item 3 (Category 1)</div>
+  <div class="item" data-category="category3">Item 4 (Category 3)</div>
+  <!-- Add more items with different categories -->
+
+  <script>
+    function filterItems() {
+      const categoryFilter = document.getElementById('categoryFilter');
+      const selectedCategory = categoryFilter.value;
+
+      const items = document.getElementsByClassName('item');
+      for (const item of items) {
+        const itemCategories = item.getAttribute('data-category').split(' ');
+
+        if (selectedCategory === 'all' || itemCategories.includes(selectedCategory)) {
+          item.classList.add('active');
+        } else {
+          item.classList.remove('active');
+        }
+      }
+    }
+  </script>
+</body>
+</html>
