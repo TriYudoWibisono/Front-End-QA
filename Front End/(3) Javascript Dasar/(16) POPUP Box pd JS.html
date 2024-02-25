@@ -5,7 +5,20 @@ dimunculkan sebagai alat interaksi, yang digunakan agar dapat berdialog dengan h
 
 Ada 3 jenis pop box :
 1. alert
+   penulisan : alert('hello world!');
+   
 2. prompt
+   penulisan : promp('masukkan nama : ');
+   - form akan meminta user menginputkan nilai ke dalam pop up. untuk mendapatkan nilai tersebut, kita harus memasukkan prompt kedalam variabel.
+   misal : var nama = prompt('masukkan nama : ');
+   alert(nama);
+
 3. confirm
+   penulisan : confirm('kamu yakin ??');
+   tampilan sama seperti pop up pada prompt. namun pada confirm ini kita bisa menentukan apa yang terjadi jika user menekan tombol ok atau cancel. ini biasanya digunakan saat kita akan mendelete data.
+
+   prompt dan confirm membuat fungsi yang sama yaitu mengembalikan nilai. namun perbedaannya jika prompt tadi nilai yang di kembalikan adalah apapun yang user ketikkan di inputan pop up, sedangkan confirm mengembalikan nilai boolean (true saat tekan ok atau false saat cancel).
+
+   confirm ini biasa digunakan didalam pengkondisian atau perulangan.
 
 -->
